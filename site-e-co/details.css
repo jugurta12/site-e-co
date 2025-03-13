@@ -1,0 +1,586 @@
+body {
+    margin: 0;
+}
+
+.nav1{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #000;
+    color: #f7f7f7;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    gap: 440px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.liens{
+    display: flex;
+    white-space: nowrap;
+    justify-content: space-between;
+    gap: 90px;
+    width: 20%;
+    font-size: 23px;
+    margin-left: 100px;
+}
+
+.liens a{
+    font-family: 'Inria Sans';
+    color: white;
+    text-decoration: none;
+    
+}
+
+.liens a:hover{
+    cursor: grab;
+    transition: 1s ease-in-out, left 1s ease-in-out ;
+}
+
+.liens a::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0; width: 0; height: 3px; 
+    background-color: rgb(255, 255, 255);
+    transition: 1s ease-in-out, left 1s ease-in-out;
+}
+
+.liens a:hover::after {
+    width: 100%; 
+    right: 0; 
+}
+
+.logo{
+    font-family: "Inspiration";
+    font-size: 50px;
+    position: relative;
+    left: -150px;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+}
+
+
+.icon{
+    display: flex;
+    white-space: nowrap;
+    justify-content: space-between;
+    gap: 50px;
+    display: flex;
+    width: 20%;
+    font-size: 23px;
+    margin-left: -300px;
+
+}
+
+.icon a{
+    font-family: 'Inria Sans';
+    color: white;
+    text-decoration: none;
+    
+}
+
+.icon a:hover{
+    cursor: grab;
+    transition: 1s ease-in-out, left 1s ease-in-out ;
+}
+
+.icon a::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0; width: 0; height: 3px; 
+    background-color: rgb(255, 255, 255);
+    transition: 1s ease-in-out, left 1s ease-in-out;
+}
+
+.icon a:hover::after {
+    width: 100%; 
+    right: 0; 
+}
+
+
+
+.container21{
+    display: flex;
+    gap: 100px;
+    position: relative;
+    top: 200px;
+    background-color: rgb(245, 243, 243);
+    margin: 40px;
+
+}
+
+.product{
+    border-radius: 25px;
+}
+
+.col{
+    flex-direction: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    font-family: "Imperial script";
+    font-size: 50px;
+    margin-left: 50px;
+    position: relative;
+    top: -50px;
+}
+
+.coll{
+    position: relative;
+    margin-left: 125px;
+    opacity: 0;
+    transition: 1s;
+}
+
+.col2{
+    background-color: rgb(245, 243, 243);
+    position: relative;
+    margin-top: 150px;
+    margin-bottom: 70px;
+    margin-right: 70px;
+    opacity: 0;
+    transition: 2s;
+}
+
+.color{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin-left: 140px;
+}
+
+.color1{
+height: 50px;
+width: 50px;
+background-color: rgb(231, 214, 88);
+border-radius: 50%;
+position: relative;
+left: 80px;
+}
+
+.color2{
+    height: 50px;
+    width: 50px;
+    background-color: rgb(198, 198, 198);
+    border-radius: 50%;
+    position: relative;
+    left: 100px;
+}
+
+.color3{
+    height: 50px;
+    width: 50px;
+    
+    border-radius: 50%;
+}
+
+.color4{
+    height: 50px;
+    width: 50px;
+    
+    border-radius: 50%;
+}
+
+.Martir1{
+    font-family: 'Abhaya Libre';
+    font-size: 40px;
+    margin-left: 170px;
+
+}
+
+.Martir2{
+    font-family: 'Inria Sans';
+    font-size: 17px;
+    position: relative;
+    margin-left: 30px;
+}
+
+.Martir3{
+    font-family: 'Inria Sans';
+    font-weight: bold;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+}
+
+.col3{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.prix{
+    font-family: 'abel';
+    font-size: 30px;
+}
+.add1 {
+    font-size: 20px;
+    padding: 15px 30px;
+    border: none;
+    cursor: grab;
+    background-color: black;
+    color: white;
+    border-radius: 3px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    font-family: 'Roboto';
+    width: 399px;
+}
+
+.add1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(66, 66, 66);
+    transition: left 0.5s ease-in-out;
+    z-index: -1; /* Met le background en arrière */
+}
+
+.add1:hover::before {
+    left: 0;
+}
+
+
+.livraison{
+    font-family: 'Abhaya Libre';
+}
+
+.look{
+    display: flex;
+    font-size: 60px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    position: relative;
+    top:250px;
+    font-family: 'French Canon SC';
+    transition: 2s;
+    opacity: 0;
+}
+
+.Clou{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px; 
+}
+
+.Clou5{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: none;
+    cursor: grab;
+    border-radius: 5px;
+    font-family: 'Abhaya Libre';
+    font-size: 20px;
+    transition: .5S;
+    border-radius: 40px;
+    border: 2px solid black;
+    padding: 15px 40px;
+}
+
+.Clou5:hover{
+    background-color: #080808;
+    color: rgb(255, 255, 255);
+}
+
+.Clou3{
+   font-family: "Abel";
+   font-size: 40px;
+   position: relative;
+   top: -30px;
+}
+
+.Clou4{
+    opacity: 0;
+    transition: 1.5s;
+}
+
+.Clou2{    
+    opacity: 0;
+    transition: 2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:30px
+}
+
+.Branch{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px; 
+
+}
+
+
+.Branch2{    
+    opacity: 0;
+    transition: 2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:30px
+}
+
+.Branch3{
+   font-family: "Abel";
+   font-size: 40px;
+   position: relative;
+   top: -30px;
+}
+
+.Branch4{
+    opacity: 0;
+    transition: 1.5s;
+}
+
+.Branch5{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 15px 40px;
+    cursor: grab;
+    border-radius: 5px;
+    font-family: 'Abhaya Libre';
+    font-size: 20px;
+    transition: .5S;
+    border-radius: 40px;
+    border: 2px solid black;
+}
+
+.Branch5:hover{
+    background-color: #080808;
+    color: rgb(255, 255, 255);
+}
+
+.Space{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px; 
+
+}
+
+
+.Space2{    
+    opacity: 0;
+    transition: 2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:30px
+}
+
+.Space3{
+   font-family: "Abel";
+   font-size: 40px;
+   position: relative;
+   top:-30px;
+}
+
+.Space4{
+    opacity: 0;
+    transition: 1.5s;
+}
+
+
+.Space5{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 15px 40px;
+    cursor: grab;
+    border-radius: 5px;
+    font-family: 'Abhaya Libre';
+    font-size: 20px;
+    transition: .5S;
+    border-radius: 40px;
+    border: 2px solid black;
+}
+
+.Space5:hover{
+    background-color: #080808;
+    color: rgb(255, 255, 255);
+}
+
+.container22{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    position: relative;
+    top: 400px;
+    margin-left: 110px;
+    margin-right: 110px;
+    height: 420px;
+}
+
+.parcourir2{
+    top:500px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 15px 40px;
+    cursor: grab;
+    border-radius: 5px;
+    font-family: 'Abhaya Libre';
+    font-size: 25px;
+    transition: 1S;
+    border-radius: 4px;
+    border: 2px solid black; 
+    opacity: 0;
+}
+
+.parcourir2:hover{
+    background-color: #2b2b2b;
+}
+
+.parcourir{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    top:600px;
+}
+
+
+
+
+.plusencore {
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;       /* Permettre aux éléments de passer à la ligne si nécessaire */
+    position: relative;
+    top:800px;
+}
+
+.plusencoree {
+    position: relative;
+    top: 700px;
+    font-family: 'Ultra';
+    font-size: 50px;
+    margin-left: 30px;
+    opacity: 0;
+    transition: 1s;
+}
+
+.plusencore1, .plusencore2, .plusencore3 {
+    display: flex;
+    flex-direction: column; /* Organiser le contenu à l'intérieur en colonne */
+    flex: 1;                /* Permet à chaque brique de prendre une part égale de l'espace */
+    padding: 10px; 
+    font-family: 'Montserrat' ;  
+}
+
+.plusencore11, .plusencore21, .plusencore31 {
+    margin-bottom: 1px; 
+    font-size: 30px;
+    transition: 1.5s;
+    transform: translateX(-100px);
+    opacity:0;
+}
+
+.plusencore12, .plusencore22, .plusencore32 {
+    margin-bottom: 1px;
+    transform: translateX(0);
+    opacity:0;
+    transition: 2s;
+}
+
+
+.plusencore13 {
+    position: relative;
+    top: 56px;
+}
+
+.plusencore23 {
+    position: relative;
+    top: 76px;
+}
+
+.plusencore33{
+    position: relative;
+    top: 20px;
+}
+
+
+.newsletter-container {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    top: 900px;
+}
+
+.newsletter-container p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.form-container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+input[type="email"] {
+    width: 250px;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+input[type="email"]:focus {
+    border-color: black;
+}
+
+#button1 {
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+#button1:hover {
+    background-color: #333;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+
+.fin3{
+    position: relative;
+    top:1000px;
+    font-size: 15px;
+    font-family: "junge";
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    margin-right: 100px;
+
+}
