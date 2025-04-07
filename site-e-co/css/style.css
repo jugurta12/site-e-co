@@ -1,0 +1,323 @@
+body {
+    margin: 0;
+}
+
+.nav1{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #000;
+    color: #f7f7f7;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    gap: 440px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.liens{
+    display: flex;
+    white-space: nowrap;
+    justify-content: space-between;
+    gap: 90px;
+    width: 20%;
+    font-size: 23px;
+    margin-left: 100px;
+}
+
+.liens a{
+    font-family: 'Inria Sans';
+    color: white;
+    text-decoration: none;
+    
+}
+
+.liens a:hover{
+    cursor: grab;
+    transition: 1s ease-in-out, left 1s ease-in-out ;
+}
+
+.liens a::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0; width: 0; height: 3px; 
+    background-color: rgb(255, 255, 255);
+    transition: 1s ease-in-out, left 1s ease-in-out;
+}
+
+.liens a:hover::after {
+    width: 100%; 
+    right: 0; 
+}
+
+.logo{
+    font-family: "Inspiration";
+    font-size: 50px;
+    position: relative;
+    left: -150px;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+}
+
+
+.icon{
+    display: flex;
+    white-space: nowrap;
+    justify-content: space-between;
+    gap: 50px;
+    display: flex;
+    width: 20%;
+    font-size: 23px;
+    margin-left: -300px;
+
+}
+
+.icon a{
+    font-family: 'Inria Sans';
+    color: white;
+    text-decoration: none;
+    
+}
+
+.icon a:hover{
+    cursor: grab;
+    transition: 1s ease-in-out, left 1s ease-in-out ;
+}
+
+.icon a::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0; width: 0; height: 3px; 
+    background-color: rgb(255, 255, 255);
+    transition: 1s ease-in-out, left 1s ease-in-out;
+}
+
+.icon a:hover::after {
+    width: 100%; 
+    right: 0; 
+}
+
+
+.container1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;              
+    width: 100%;
+    top: 200px;
+    gap:50px;
+    position: relative;
+}
+
+.bijouterie{
+    font-family: "instrument serif";
+    font-size: 40px;
+    letter-spacing: 4px;
+    opacity: 0;
+    transition: 1s;
+}
+
+.collections{
+    font-size: 25px;
+    font-family: "Julius Sans One";
+    opacity: 0;
+    transition: 2s;
+}
+
+
+
+.container2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 160px;
+    row-gap: 20px;
+    position: relative;
+    top:300px;
+}
+
+.img1,.img2,.img3,.img4,.img5,.img6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 30px;
+    font-family: "Imperial script";
+}
+
+#j1,#j2,#j3,#j4,#j5,#j6{
+    transition: 0.5s ease-in-out;
+}
+
+
+#j1:hover,#j2:hover,#j3:hover,#j4:hover,#j5:hover,#j6:hover{
+    transform: scale(1.1);
+    cursor: grab;
+}
+
+
+.container3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7B7878;
+    width: 630px;
+    height: 520px;
+    position: relative;
+    margin-left: 80px;
+    top: 400px;
+    transform: translateX(-50px);
+    transition: 2s;
+    opacity: 0;
+}
+
+.img7{
+    border: 25px solid white;
+    background-color: white;
+}
+
+.container4{
+    position: relative;
+    top: -200px;
+    display: flex;
+    margin-left:800px ;
+    flex-direction: column;
+    margin-right: 50px;
+    transform: translateX(50px);
+    transition: 2s;
+    opacity: 0;
+}
+
+.container4.visible2 {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.contact{
+    font-family: "Italianno";
+    font-size: 85px;
+}
+
+.perso{
+    font-family: 'Jaldi';
+    font-size: 25px;
+}
+
+.contact2{
+    font-size: 22px;
+    font-family: 'Instrument Serif', serif;
+    letter-spacing: 2px;
+    
+}
+
+.contact2:hover{
+    cursor: grab;
+    display: flex;
+
+}
+
+.fin{
+    font-family: 'Junge';
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    right: 90px;
+    top:50px;
+}
+
+
+.transi:after {
+    content: "";
+    display: block;
+    height: 2px;
+    background: black;
+    width: 0;
+    transition: width 0.5s ease;
+    position: relative;
+    top:40px;
+    transition: 0.5s;
+    width: 100%;
+}
+
+.transi{
+    transition: 0.5s;
+}
+
+.jj1,.jj2,.jj3,.jj4,.jj5,.jj6 {
+    font-size: 30px;
+    font-family: "Imperial script";
+    position: relative;
+    display: inline-block; 
+}
+
+.jj1::after,.jj2::after,.jj3::after,.jj4::after ,.jj5::after ,.jj6::after  {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    height: 2px;
+    background: black;
+    width: 0; 
+    transition: width 0.5s ease-in-out;
+}
+
+.jj1.transi:after,.jj2.transi:after, .jj3.transi:after,.jj4.transi:after,.jj5.transi:after,.jj6.transi:after{
+    width: 100%;
+}
+
+.newsletter-container {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.newsletter-container p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.form-container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+input[type="email"] {
+    width: 250px;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+input[type="email"]:focus {
+    border-color: black;
+}
+
+#button1 {
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+#button1:hover {
+    background-color: #333;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
