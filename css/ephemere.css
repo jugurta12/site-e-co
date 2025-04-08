@@ -1,0 +1,407 @@
+body {
+    margin: 0;
+}
+
+.nav1{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #000;
+    color: #f7f7f7;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    gap: 440px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.liens{
+    display: flex;
+    white-space: nowrap;
+    justify-content: space-between;
+    gap: 90px;
+    width: 20%;
+    font-size: 23px;
+    margin-left: 100px;
+}
+
+.liens a{
+    font-family: 'Inria Sans';
+    color: white;
+    text-decoration: none;
+    
+}
+
+.liens a:hover{
+    cursor: grab;
+    transition: 1s ease-in-out, left 1s ease-in-out ;
+}
+
+.liens a::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0; width: 0; height: 3px; 
+    background-color: rgb(255, 255, 255);
+    transition: 1s ease-in-out, left 1s ease-in-out;
+}
+
+.liens a:hover::after {
+    width: 100%; 
+    right: 0; 
+}
+
+.logo{
+    font-family: "Inspiration";
+    font-size: 50px;
+    position: relative;
+    left: -150px;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+}
+
+
+.icon{
+    display: flex;
+    white-space: nowrap;
+    justify-content: space-between;
+    gap: 50px;
+    display: flex;
+    width: 20%;
+    font-size: 23px;
+    margin-left: -300px;
+
+}
+
+.icon a{
+    font-family: 'Inria Sans';
+    color: white;
+    text-decoration: none;
+    
+}
+
+.icon a:hover{
+    cursor: grab;
+    transition: 1s ease-in-out, left 1s ease-in-out ;
+}
+
+.icon a::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0; width: 0; height: 3px; 
+    background-color: rgb(255, 255, 255);
+    transition: 1s ease-in-out, left 1s ease-in-out;
+}
+
+.icon a:hover::after {
+    width: 100%; 
+    right: 0; 
+}
+
+
+
+
+.bijou8{
+    display: flex;
+    position: relative;
+    top:-50px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    margin-left: 300px;
+    margin-right: 300px;
+    padding-top: 50px;
+}
+
+.bijou8 img{
+    border-radius: 30px;
+}
+
+.L’éphèmere{
+    font-family: "Imperial script";
+    position: relative;
+    top: 50px;
+    font-size: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0; 
+    transition: 1.5s;
+}
+
+.bijou88{
+    font-family: 'Abhaya Libre';
+    font-size: 30px;
+}
+
+.bijou888{
+    font-family: 'Abhaya Libre';
+    color: #282828;
+    opacity: 0;
+    transition: 1.5s;
+}
+
+.bijou8888{
+    font-family: 'Abel';
+    font-size: 25px;
+}
+
+#bbijou8{
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    cursor: grab;
+    font-family: "junge";
+    font-size: 20px;
+    border-radius: 40px;
+    border: 2px solid black; 
+    transition: .5s;
+}
+
+#bbijou8:hover{
+    background-color: #080808;
+    color: rgb(255, 255, 255);
+}
+
+
+.visible {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.container12{
+    display: flex;
+    justify-content: center;
+    gap:75px;
+    position: relative;
+    background-color: rgb(222, 222, 222);
+    padding-top: 80px;
+    margin-left: 110px;
+    margin-right: 110px;
+    height: 420px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    opacity: 0;
+    transform: translateX(100px);
+    transition: 2s
+}
+
+.empire{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:25px;
+}
+
+
+.empire2{
+    font-family: 'Abhaya Libre';
+    font-size: 35px;
+}
+
+.empire3{
+   font-family: "Abel";
+   font-size: 30px;
+   position: relative;
+   top: -30px;
+}
+
+.monoS{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:25px;
+}
+
+.monoS2{
+    font-family: 'Abhaya Libre';
+    font-size: 35px;
+}
+
+.monoS3{
+   font-family: "Abel";
+   font-size: 30px;
+   position: relative;
+   top: -30px;
+}
+
+.baguelette{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:25px;
+}
+
+.baguelette2{
+    font-family: 'Abhaya Libre';
+    font-size: 35px;
+}
+
+.baguelette3{
+   font-family: "Abel";
+   font-size: 30px;
+   position: relative;
+   top: -30px;
+}
+
+.bbaguelette{
+    background-color: rgb(222, 222, 222);
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 20px;
+    cursor: grab;
+    border-radius: 5px;
+    font-family: "junge";
+    font-size: 20px;
+    transition: .5S;
+    border-radius: 40px;
+    border: 2px solid black;
+}
+
+.bbaguelette:hover{
+    background-color: #080808;
+    color: rgb(255, 255, 255);
+}
+
+.container13{
+    display: flex;
+    justify-content: center;
+    gap:75px;
+    position: relative;
+    background-color: rgb(222,222,222);;
+    padding-top: 40px;
+    margin-left: 110px;
+    margin-right: 110px;
+    height: 440px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: 2s
+}
+
+.DA{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:25px;
+}
+
+
+.DA2{
+    font-family: 'Abhaya Libre';
+    font-size: 35px;
+}
+
+.DA3{
+   font-family: "Abel";
+   font-size: 30px;
+   position: relative;
+   top: -30px;
+}
+
+.Xlord{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:25px;
+}
+
+.Xlord2{
+    font-family: 'Abhaya Libre';
+    font-size: 35px;
+}
+
+.Xlord3{
+   font-family: "Abel";
+   font-size: 30px;
+   position: relative;
+   top: -30px;
+}
+
+.fortuna{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:25px;
+}
+
+.fortuna2{
+    font-family: 'Abhaya Libre';
+    font-size: 35px;
+}
+
+.fortuna3{
+   font-family: "Abel";
+   font-size: 30px;
+   position: relative;
+   top: -30px;
+}
+
+.apropos{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 65%;
+    text-align: left;
+    flex-direction: column;
+    position: relative;
+    top: 100px;
+    padding-left: 40px;
+}
+
+.apropos2{
+    font-size: 25px;
+    font-family: 'Abhaya Libre';
+}
+
+.apropos3{
+    font-size: 25px;
+    font-family: "Julius Sans One";
+    transition: 2s;
+    transform: translateY(100px);
+    opacity: 0;
+}
+
+
+.visible {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.apropos5{
+    font-size: px;
+    font-family: "Julius Sans One";
+}
+
+.apropos6{
+    font-size: px;
+    font-family: "Julius Sans One";
+    position: relative;
+    top: -43px;
+    left: 75px;
+}
+
+
+.fin2{
+    position: relative;
+    top:150px;
+    height: 70px;
+    font-size: 15px;
+    font-family: "junge";
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    margin-right: 100px;
+
+}
+
+ 
